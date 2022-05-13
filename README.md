@@ -5,8 +5,6 @@ You can use the [editor on GitHub](https://github.com/nhubaotruong/nhubaotruong.
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Main content
-<div align="center">
   
 [![Never gonna give you up](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ "Never gonna give you up")
 
-</div>
