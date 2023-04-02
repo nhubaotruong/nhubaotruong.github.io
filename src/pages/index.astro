@@ -1,31 +1,76 @@
 ---
 import Main from "../components/Main";
-import "bootstrap/dist/css/bootstrap.min.css";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
+import "../styles/index.scss";
+import "@fontsource/inter";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+  <!--
+kxxxxxxxxxxxxxxdddxxxxddddddddddddddddddl:,''..''...',,,,,;;:dxxxxxxxxxxxxxxxxxxxxxxddxxxxxxxxxxxxxx
+kkxxxxxxxxxxxxxxxxxxxxxxdddddddddddddddlc:,''...''.'',,''',,;cdxxxxxxxxxxxxxxxxxxxxxxxddxxxxxxxxxxxx
+kkkxxxkkkkkkkxxxxxxxxxxxxxdddddxddoollc::;,''.......''''.''',;:dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kkkkxkkOkkkkkkkxkkkkxxxxxxxxdddxdoolllc:;;,,'''''.''''''''',,;;cdxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kxkkkkOOOkkOkkkxkkkkkkxxxxxxdddxdddlclc::::::cccc:::ccc::;;,,,;;oxxxxxxxxxxxxxxxxxxkxxxxxxxxxxxxxxxx
+kkkkkkkkkkkkkkkkkkOOOkkxxxxxdddxdxd:,,;::::::ccllllllllolll:,,,;oxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kkkkkkkkOOOOkkkkOkkkkkkkkkxxxdddxdl,,;:::::::cccllllllllolll:,,:dxxxkkxxxxxxxxxxxxkkkkkxxxxxxxxxxxxx
+kkkkkOOkOOOOkkkkkkkkkkkkkkkxxdddxd:,,;:::;::::ccllllllllllll:;,cxxxxkxxxkkxxxxxdxxxkkxxxxxxxxxxxxxxx
+kkkkkkOkkkOOkkkkOOOkOOOkkkxxxxxddl:;;:::;;;;;,;;:clcclllllll:;;cxxxxxxxxxkxxxxxxxxkkxxxxxxxxxxxxxxxx
+kkkkkOOOOOOOOOkOOOkkOkkxxxxxxxxddo::::::;;;;;;;;;:l:;;;:ccll:;:oxxxxxxxxkkkxxxxxxxkkkkkxxxxxxxxxxxxx
+kkkkkkkkkOOOOkkOOOkkOkxxxxxxxddollldddc:::ccc:;;;:llc;;;:ccc;:dxxxxxdxxxxxkkxxxxxxkkkxxxxxxxxxxxxxxx
+kkkkkkkkkkOkkkkkkOkkkxxxxxxxxdo:;:lxdoc::::c:;;;:cllllllllllcxxxxxxxxxxxdxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kkkkkkkkkkOOOkkkkkxxxxxxxxxxxxdc;;:ooc:::::;;;;;;:cllllollllcxxxxxxxxxdddddxxxxxxxxxxxxxxxxxxxxxxxxx
+OkkkkkkkkkkOOkkxxxxxxxxxxxxxxxxdc:::cc:::::;;;;::cccllllllllcdxxxxxxxxxxxdddddddxxxxxxxxxxxkkkkxxxxx
+OOkkkkkkkkkkkkxxxxxxxxxxxxkkkxxxxollcc:::::;;;:ccclllllllllcoxxxxxkkxxxxxxxxxxxxxxxxxxxxxxkkkkkkkkxx
+OOkkkkkkkkkkkxxxxxxxxxxxkkkkkkxxkxxoc:::::;,'',,,,,:llllllldxkkkkxkkkxxxxxxxxxxxxxxxxxxxxxkkkkkkkkkk
+OOOkkkkkkkxkkxxxxxxxxxxkkkkkkkkkkkkol:::::::;;:::;:cclllodxxxkkkkxxkkkxxxxxxxxxxxxxxxxxxxxkkkkkkkkkk
+OOOOkkkkkkkxxxxxxxxxkkkkOkkkkkkkkkxocc:::::::;;::cllllloxkkkkkkkkxkkkkxxxxxxxxxxxxxxxxxxxkkkkkkkkkkk
+OOkOOOOkkkxxxxxxxkkkkkkkkkkkkxkkkxxoc::::::::cclllllllldxxxxxxxxxxxkkkkxxxxxxxxxxxxxxxxxxkkkkkkkkkkk
+kkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxo::::::::;::ccccclllldxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkkkkkk
+kkkkkkxxxxxxxxxxxxxxxxxxxxxdxxxxxxdo:::::::;;;;::cclllll,:ldxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+kkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxdoccccc::::cccllllllld;'',coddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxkkxx
+OOkOOOkkxxxxxxxxxkkkkkkkkxkkxxxdxdocllollll::cccccccccod;'...',:cclloddxxxxxxxxxxxxxxxxxxkkkxkkkkkkk
+OOkOOOkxxxxxxxxxxkkkxkkxxdolllloxoc::::::c:;;:::cccc:odd;'.....',;,;;::::clloodxxxxxxxxxxxxxxxxkkkkx
+kkkkkkxxxxxxxxxxxxxxxdolc:;;;:cddocc:::::cc;;;:::::coddd,'........',,,',,,,,,;;:cloddxxxxxxxxxxxxxxx
+OkOOOkxxxxxxxxxxxddol:;,'.'..,cdddl::::::cc;;;;;;coddxdo'...........''........'''''',:dxxxxxxxxxxxxx
+OOOOOkxxxxxxddoolc:,'........':ddoc::::::cc;;;;cloddddo,.............................',oxxxxxxxxxxxk
+OOOOOkxxxxdlcc:;,'............;xoo:;:::::cc;:loodddddl,...............................',dxxxxxdxxxxk
+kkkkkxxxxdl,'''...............;dolc:cccllclloooddddo:'................................''lxxxxxddddxx
+kkkkkxxxdd:...................'c:::;::cc:::::cloddoc:'.................................':xxxxxdddddx
+kkkkkxxxdd;.......................,:coxl:;;;;;::c:;,'................''.................;xxxxxxddddd
+xxxkxxxxdo'.......................,;ldddc;;;;;;,,,,,'...............':c:,...............cxxxxxxddddd
+kkkkxxxxxl'.......................',ldddc;;;;;;;;;;;,...............':;::'............':dxxxxxxddddd
+xxkxxxxxxl'.......................,;loodc:::::;;;;,,'................;,;:'....'::,...'cxxxxxxxxxdxxx
+kkkxxxxxxo'.......................';looo:;,,,,'''''''................';;:;..';clooc'..:dxxxxxxxxxxxx
+kkkxxxxxxd;........................,llol;;,;;;;;;;;;,.................;;:c;;cllc:;,'..;dxxxxxxxxxxxx
+kkxxxxxxxxc........................;:;c:::::::;;;;,,'.................;;;;::ccc:;'..';dxxxxxxxxxxxxx
+kkxxxxxxxxc........................,;::,,,,,,,,,,,'''.................;;;::;:clcc,...,cdxxxxxxxxxxxx
+xxxxxxxxxxc........................',::,,,,;;;;;;;;;,'................;;;ccc:::::;'....,lxxxxxxxxxxx
+xxxxxxxxxx:........................'::c::::::;;;,,,''.................';,;:cclll:'......':dxxxxxxxxx
+kxxxxxxxxx:.........................,;:,,,''',,,,,,,''..............,,,;;;clcccc:........'cdxxxxxxxx
+xxxxxxxxxxc.........................,;:,,;;;;;:::::;;,,.............,::ccclolccc;.........'cdxxxxxxx
+xxxxxxxxxxo'........................,;;;;;;;,,,,,''...................,;:ccccccc:'.........'lxxxxxxx
+xxxxxxxxxxd,........................,;;''''''''',,,,,'','................,,,;::;'..........''lxxxxxx
+xxxxxxxxxxd;........................,;;,,,;;;;;;;;;,,''','..................................',oxxxxx
+xxxxxxxxxxd:........................,;;;,,,,,,''''''''...''..................................'cdxxxx
+xxxxxxxxxxd;........................,;,'''''''''',,,,,,''.....................................;dxxxx
+xxxxxxxxxdd,........................,;',,,,,,,,,;,,,;,,,,'''..................''..............'cdxxx
+xxxxxxxxxxo'........................,;,;;;;;,,,''''''''''............................,,'......;odxxx
+xxxxxxxxxxo,........................;;........'',,;;;;,''''................. .........'......'odxxxx
+   -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/avatar.jpg" />
-    <link rel="preconnect" href="https://fonts.bunny.net" />
-    <link href="https://fonts.bunny.net/css?family=Inter" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
     <title>Nhu Bao Truong</title>
   </head>
-  <body class="bg-dark justify-content-center align-items-center d-flex vh-100">
+  <body
+    class="justify-content-center align-items-center d-flex vh-100 container"
+  >
     <Main client:load />
   </body>
   <script src={bootstrap}></script>
 </html>
-
-<style is:global>
-  body {
-    text-rendering: optimizeLegibility;
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
-</style>
