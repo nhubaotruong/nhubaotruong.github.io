@@ -16,11 +16,14 @@
     "@popperjs/core": "^2.11.7",
     "astro": "^2.1.9",
     "bootstrap": "5.2.3",
+    "pako": "^2.1.0",
     "preact": "^10.6.5"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^0.4.4",
     "@types/bootstrap": "^5.2.6",
+    "@types/node": "^18.15.11",
+    "@types/pako": "^2.0.0",
     "astro-purgecss": "^2.0.1",
     "sass": "^1.60.0"
   }

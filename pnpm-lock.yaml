@@ -15,10 +15,13 @@ dependencies:
     version: 2.11.7
   astro:
     specifier: ^2.1.9
-    version: 2.1.9(sass@1.60.0)
+    version: 2.1.9(@types/node@18.15.11)(sass@1.60.0)
   bootstrap:
     specifier: 5.2.3
     version: 5.2.3(@popperjs/core@2.11.7)
+  pako:
+    specifier: ^2.1.0
+    version: 2.1.0
   preact:
     specifier: ^10.6.5
     version: 10.13.2
@@ -30,6 +33,12 @@ devDependencies:
   '@types/bootstrap':
     specifier: ^5.2.6
     version: 5.2.6
+  '@types/node':
+    specifier: ^18.15.11
+    version: 18.15.11
+  '@types/pako':
+    specifier: ^2.0.0
+    version: 2.0.0
   astro-purgecss:
     specifier: ^2.0.1
     version: 2.0.1(astro@2.1.9)
@@ -75,7 +84,7 @@ packages:
       astro: ^2.1.5
     dependencies:
       '@astrojs/prism': 2.1.1
-      astro: 2.1.9(sass@1.60.0)
+      astro: 2.1.9(@types/node@18.15.11)(sass@1.60.0)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -686,6 +695,13 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
 
+  /@types/node@18.15.11:
+    resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
+
+  /@types/pako@2.0.0:
+    resolution: {integrity: sha512-10+iaz93qR5WYxTo+PMifD5TSxiOtdRaxBf7INGGXMQgTCu8Z/7GYWYFUOS3q/G0nE5boj1r4FEB+WSy7s5gbA==}
+    dev: true
+
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
 
@@ -764,11 +780,11 @@ packages:
     peerDependencies:
       astro: ^2.0.0
     dependencies:
-      astro: 2.1.9(sass@1.60.0)
+      astro: 2.1.9(@types/node@18.15.11)(sass@1.60.0)
       purgecss: 5.0.0
     dev: true
 
-  /astro@2.1.9(sass@1.60.0):
+  /astro@2.1.9(@types/node@18.15.11)(sass@1.60.0):
     resolution: {integrity: sha512-UkbG0lgue1b/t4yMI+AkAGEfdOwcPS2RUYQ/QIurtKjP6W5gtKQveRTBuHH7iwiBziH+z8Ecc5/OAALoXSvMlQ==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -827,7 +843,7 @@ packages:
       typescript: 5.0.3
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.2.1(sass@1.60.0)
+      vite: 4.2.1(@types/node@18.15.11)(sass@1.60.0)
       vitefu: 0.2.4(vite@4.2.1)
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -2075,6 +2091,10 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
+  /pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
+    dev: false
+
   /parse-latin@5.0.1:
     resolution: {integrity: sha512-b/K8ExXaWC9t34kKeDV8kGXBkXZ1HCSAZRYE7HR14eA1GlXX5L8iWhs8USJNhQU9q5ci413jCKF0gOyovvyRBg==}
     dependencies:
@@ -2705,7 +2725,7 @@ packages:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  /vite@4.2.1(sass@1.60.0):
+  /vite@4.2.1(@types/node@18.15.11)(sass@1.60.0):
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2730,6 +2750,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.15.11
       esbuild: 0.17.14
       postcss: 8.4.21
       resolve: 1.22.1
@@ -2746,7 +2767,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.2.1(sass@1.60.0)
+      vite: 4.2.1(@types/node@18.15.11)(sass@1.60.0)
 
   /vscode-css-languageservice@6.2.4:
     resolution: {integrity: sha512-9UG0s3Ss8rbaaPZL1AkGzdjrGY8F+P+Ne9snsrvD9gxltDGhsn8C2dQpqQewHrMW37OvlqJoI8sUU2AWDb+qNw==}
