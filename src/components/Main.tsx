@@ -10,9 +10,9 @@ const Main = () => {
     }, [])
 
     const contactInfos = [
-        { logo: <i class="fa-brands fa-github fa-xl" style="color: #fff;" alt="github" />, link: "https://github.com/nhubaotruong/" },
-        { logo: <i class="fa-brands fa-linkedin fa-xl" style="color: #fff;" alt="linkedin" />, link: "https://www.linkedin.com/in/nhubaotruong/" },
-        { logo: <i class="fa-solid fa-inbox fa-xl" style="color: #fff;" alt="gmail" />, link: "mailto:baoprokute1234@gmail.com" },
+        { logo: <i class="fa-brands fa-github fa-xl" style="color: #fff;" />, link: "https://github.com/nhubaotruong/" },
+        { logo: <i class="fa-brands fa-linkedin fa-xl" style="color: #fff;" />, link: "https://www.linkedin.com/in/nhubaotruong/" },
+        { logo: <i class="fa-solid fa-inbox fa-xl" style="color: #fff;" />, link: "mailto:baoprokute1234@gmail.com" },
     ]
     return (
         <div>
@@ -27,7 +27,7 @@ const Main = () => {
             <h1 class="text-center mt-5 fw-semibold">
                 Contacts:
             </h1>
-            <h2 class="text-center d-flex justify-content-center mt-4">
+            <div class="text-center d-flex justify-content-center mt-4 w-100">
                 {
                     contactInfos.map(({ logo, link }) => (
                         <h1 class="mx-2">
@@ -37,7 +37,7 @@ const Main = () => {
                         </h1>
                     ))
                 }
-            </h2>
+            </div>
         </div >
     )
 }
