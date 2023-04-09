@@ -10,15 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^2.1.0",
-    "@fontsource/inter": "^4.5.15",
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "@popperjs/core": "^2.11.7",
-    "astro": "^2.1.9",
-    "astro-critters": "^1.1.31",
-    "bootstrap": "5.2.3",
+    "@astrojs/vue": "^2.1.1",
+    "astro": "^2.2.1",
     "pako": "^2.1.0",
-    "preact": "^10.6.5"
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^0.4.4",
@@ -26,7 +21,6 @@
     "@types/node": "^18.15.11",
     "@types/pako": "^2.0.0",
     "astro-compress": "^1.1.35",
-    "astro-purgecss": "^2.0.1",
-    "sass": "^1.60.0"
+    "astro-purgecss": "^2.0.1"
   }
 }

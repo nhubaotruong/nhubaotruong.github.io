@@ -1,11 +1,11 @@
 import { defineConfig } from 'astro/config';
-import preact from "@astrojs/preact";
 import purgecss from "astro-purgecss";
-import critters from "astro-critters";
 import compress from "astro-compress";
+
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), purgecss(), critters({ pruneSource: true, preload: "body", inlineFonts: true, path: './dist', publicPath: '/' }), compress()],
+  integrations: [vue(), purgecss(), compress()],
   site: "https://nhubaotruong.github.io"
 });
