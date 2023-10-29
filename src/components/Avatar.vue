@@ -8,7 +8,6 @@
     <h3 class="text-center" @click="openLink(`aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==`)">sometimes a
         Rick Roller</h3>
 </template>
-
 <script lang="ts" setup>
 const openLink = (link: string) => window.open(atob(link), "_blank");
 </script>

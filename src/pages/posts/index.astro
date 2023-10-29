@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "../../layouts/PageLayout.astro";
+import PostOverview from "../../components/PostOverview.vue";
+const posts = await getCollection("posts", ({ data }) => data.draft !== true);
+const postDatas = posts.map(({ render, ...data }) => data);
+postDatas.sort((a, b) => b.data.id - a.data.id);
+---
+
+<PageLayout>
+  <!-- <PostOverview posts={postDatas} /> -->
+  <h1>Sorry no posts yet</h1>
+</PageLayout>

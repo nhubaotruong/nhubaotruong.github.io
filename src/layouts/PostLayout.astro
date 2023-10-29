@@ -1,0 +1,11 @@
+---
+import MainLayout from "./MainLayout.astro";
+import Post from "../components/Post.vue";
+const { data, collection } = Astro.props;
+---
+
+<MainLayout>
+  <Post frontmatter={data} collection={collection}>
+    <slot />
+  </Post>
+</MainLayout>
