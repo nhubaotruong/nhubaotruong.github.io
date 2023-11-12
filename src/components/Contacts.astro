@@ -1,0 +1,29 @@
+---
+const contactInfos = [
+    {
+        class: "fa-brands fa-github",
+        link: "https://github.com/nhubaotruong/",
+    },
+    {
+        class: "fa-brands fa-linkedin",
+        link: "https://linkedin.com/in/nhubaotruong/",
+    },
+    { class: "fa-solid fa-inbox", link: "mailto:baoprokute1234@gmail.com" },
+];
+---
+
+<h1 class="text-center mt-5 fw-semibold">Contacts:</h1>
+<div class="text-center d-flex justify-content-center mt-4 w-100">
+    {
+        contactInfos.map((contactInfo) => (
+            <h1 class="mx-2">
+                <a href={contactInfo.link} target="_blank">
+                    <i
+                        class={`fa-xl ${contactInfo.class}`}
+                        style="color: white;"
+                    />
+                </a>
+            </h1>
+        ))
+    }
+</div>

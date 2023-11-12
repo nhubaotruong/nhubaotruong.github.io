@@ -17,5 +17,5 @@ const contactInfos = [
     { class: "fa-brands fa-github", link: "https://github.com/nhubaotruong/" },
     { class: "fa-brands fa-linkedin", link: "https://linkedin.com/in/nhubaotruong/" },
     { class: "fa-solid fa-inbox", link: "mailto:baoprokute1234@gmail.com" },
-]
+];
 </script>
