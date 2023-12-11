@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/vue": "^3.0.4",
-    "@fontsource/inter": "^5.0.15",
+    "@fontsource/inter": "^5.0.16",
     "@fortawesome/fontawesome-free": "^6.5.1",
     "astro": "^3.6.4",
     "bootstrap": "^5.3.2",
