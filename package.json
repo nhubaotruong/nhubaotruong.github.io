@@ -26,6 +26,6 @@
     "astro-compress": "^2.2.3",
     "astro-critters": "^2.0.11",
     "astro-purgecss": "^3.2.1",
-    "sass": "^1.69.5"
+    "sass": "^1.69.6"
   }
 }
