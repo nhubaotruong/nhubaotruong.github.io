@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/vue':
     specifier: ^3.0.4
-    version: 3.0.4(@babel/core@7.23.3)(astro@3.6.4)(vite@4.5.1)(vue@3.3.9)
+    version: 3.0.4(@babel/core@7.23.3)(astro@3.6.4)(vite@4.5.2)(vue@3.3.9)
   '@fontsource/inter':
     specifier: ^5.0.16
     version: 5.0.16
@@ -126,15 +126,15 @@ packages:
       vscode-languageserver-textdocument: 1.0.11
     dev: true
 
-  /@astrojs/vue@3.0.4(@babel/core@7.23.3)(astro@3.6.4)(vite@4.5.1)(vue@3.3.9):
+  /@astrojs/vue@3.0.4(@babel/core@7.23.3)(astro@3.6.4)(vite@4.5.2)(vue@3.3.9):
     resolution: {integrity: sha512-+kuONslRcfXbwlZOwdl+9XYJ0HKfPQ8SHnmk4Uf3ZNscJfjptob3z0mrIaCRqIgNNWJHsY2xLZovishGQ+lAow==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^3.0.0
       vue: ^3.2.30
     dependencies:
-      '@vitejs/plugin-vue': 4.4.1(vite@4.5.1)(vue@3.3.9)
-      '@vitejs/plugin-vue-jsx': 3.0.2(vite@4.5.1)(vue@3.3.9)
+      '@vitejs/plugin-vue': 4.4.1(vite@4.5.2)(vue@3.3.9)
+      '@vitejs/plugin-vue-jsx': 3.0.2(vite@4.5.2)(vue@3.3.9)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
       '@vue/compiler-sfc': 3.3.8
       astro: 3.6.4(@types/node@20.10.5)(sass@1.69.7)(typescript@5.2.2)
@@ -953,7 +953,7 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vitejs/plugin-vue-jsx@3.0.2(vite@4.5.1)(vue@3.3.9):
+  /@vitejs/plugin-vue-jsx@3.0.2(vite@4.5.2)(vue@3.3.9):
     resolution: {integrity: sha512-obF26P2Z4Ogy3cPp07B4VaW6rpiu0ue4OT2Y15UxT5BZZ76haUY9guOsZV3uWh/I6xc+VeiW+ZVabRE82FyzWw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -963,20 +963,20 @@ packages:
       '@babel/core': 7.23.3
       '@babel/plugin-transform-typescript': 7.23.3(@babel/core@7.23.3)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
-      vite: 4.5.1(@types/node@20.10.5)(sass@1.69.7)
+      vite: 4.5.2(@types/node@20.10.5)(sass@1.69.7)
       vue: 3.3.9(typescript@5.2.2)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@vitejs/plugin-vue@4.4.1(vite@4.5.1)(vue@3.3.9):
+  /@vitejs/plugin-vue@4.4.1(vite@4.5.2)(vue@3.3.9):
     resolution: {integrity: sha512-HCQG8VDFDM7YDAdcj5QI5DvUi+r6xvo9LgvYdk7LSkUNwdpempdB5horkMSZsbdey9Ywsf5aaU8kEPw9M5kREA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.1(@types/node@20.10.5)(sass@1.69.7)
+      vite: 4.5.2(@types/node@20.10.5)(sass@1.69.7)
       vue: 3.3.9(typescript@5.2.2)
     dev: false
 
@@ -1309,8 +1309,8 @@ packages:
       tsconfck: 3.0.0(typescript@5.2.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.1(@types/node@20.10.5)(sass@1.69.7)
-      vitefu: 0.2.5(vite@4.5.1)
+      vite: 4.5.2(@types/node@20.10.5)(sass@1.69.7)
+      vitefu: 0.2.5(vite@4.5.2)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.4
@@ -4144,8 +4144,8 @@ packages:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  /vite@4.5.1(@types/node@20.10.5)(sass@1.69.7):
-    resolution: {integrity: sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==}
+  /vite@4.5.2(@types/node@20.10.5)(sass@1.69.7):
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4180,7 +4180,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vitefu@0.2.5(vite@4.5.1):
+  /vitefu@0.2.5(vite@4.5.2):
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -4188,7 +4188,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.1(@types/node@20.10.5)(sass@1.69.7)
+      vite: 4.5.2(@types/node@20.10.5)(sass@1.69.7)
 
   /vscode-languageserver-textdocument@1.0.11:
     resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
