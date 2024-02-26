@@ -19,7 +19,7 @@
     "vue": "^3.3.9"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.4.0",
+    "@astrojs/ts-plugin": "^1.5.3",
     "@types/bootstrap": "^5.2.10",
     "@types/node": "^20.10.5",
     "@types/pako": "^2.0.3",
