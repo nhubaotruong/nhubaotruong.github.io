@@ -16,7 +16,7 @@ dependencies:
     version: 6.5.1
   astro:
     specifier: ^3.6.4
-    version: 3.6.4(@types/node@20.11.20)(sass@1.70.0)(typescript@5.2.2)
+    version: 3.6.4(@types/node@20.11.20)(sass@1.71.1)(typescript@5.3.3)
   bootstrap:
     specifier: ^5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
@@ -25,7 +25,7 @@ dependencies:
     version: 2.1.0
   vue:
     specifier: ^3.3.9
-    version: 3.3.9(typescript@5.2.2)
+    version: 3.3.9(typescript@5.3.3)
 
 devDependencies:
   '@astrojs/ts-plugin':
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^3.2.1
     version: 3.2.1(astro@3.6.4)(purgecss@5.0.0)
   sass:
-    specifier: ^1.70.0
-    version: 1.70.0
+    specifier: ^1.71.1
+    version: 1.71.1
 
 packages:
 
@@ -78,7 +78,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.6.4(@types/node@20.11.20)(sass@1.70.0)(typescript@5.2.2)
+      astro: 3.6.4(@types/node@20.11.20)(sass@1.71.1)(typescript@5.3.3)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -137,8 +137,8 @@ packages:
       '@vitejs/plugin-vue-jsx': 3.0.2(vite@4.5.2)(vue@3.3.9)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
       '@vue/compiler-sfc': 3.3.8
-      astro: 3.6.4(@types/node@20.11.20)(sass@1.70.0)(typescript@5.2.2)
-      vue: 3.3.9(typescript@5.2.2)
+      astro: 3.6.4(@types/node@20.11.20)(sass@1.71.1)(typescript@5.3.3)
+      vue: 3.3.9(typescript@5.3.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -1129,16 +1129,16 @@ packages:
     dependencies:
       '@types/unist': 2.0.10
 
-  /@types/node@20.11.20:
-    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
-    dependencies:
-      undici-types: 5.26.5
-
   /@types/node@20.11.17:
     resolution: {integrity: sha512-QmgQZGWu1Yw9TDyAP9ZzpFJKynYNeOvwMJmaxABfieQoVoiVOS6MN1WSpqpRcbeA5+RW82kraAVxCCJg+780Qw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
+
+  /@types/node@20.11.20:
+    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/node@20.8.9:
     resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
@@ -1172,8 +1172,8 @@ packages:
       '@babel/core': 7.23.3
       '@babel/plugin-transform-typescript': 7.23.3(@babel/core@7.23.3)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
-      vite: 4.5.2(@types/node@20.11.20)(sass@1.70.0)
-      vue: 3.3.9(typescript@5.2.2)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.71.1)
+      vue: 3.3.9(typescript@5.3.3)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1185,8 +1185,8 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.2(@types/node@20.11.20)(sass@1.70.0)
-      vue: 3.3.9(typescript@5.2.2)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.71.1)
+      vue: 3.3.9(typescript@5.3.3)
     dev: false
 
   /@volar/language-core@2.0.4:
@@ -1355,7 +1355,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.3.9
       '@vue/shared': 3.3.9
-      vue: 3.3.9(typescript@5.2.2)
+      vue: 3.3.9(typescript@5.3.3)
     dev: false
 
   /@vue/shared@3.3.8:
@@ -1457,11 +1457,11 @@ packages:
       astro: ^3.0.0
       purgecss: ^5.0.0
     dependencies:
-      astro: 3.6.4(@types/node@20.11.20)(sass@1.70.0)(typescript@5.2.2)
+      astro: 3.6.4(@types/node@20.11.20)(sass@1.71.1)(typescript@5.3.3)
       purgecss: 5.0.0
     dev: true
 
-  /astro@3.6.4(@types/node@20.11.20)(sass@1.70.0)(typescript@5.2.2):
+  /astro@3.6.4(@types/node@20.11.20)(sass@1.71.1)(typescript@5.3.3):
     resolution: {integrity: sha512-YatUyWEQ9GUC79Wc2zbovy6D6bXPW9++Z6PYs4GDamEDspUSnnzL/INB7WJqgFI0xAFk9jcUr+MZYjkdWqXYTw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1516,10 +1516,10 @@ packages:
       shikiji: 0.6.12
       string-width: 6.1.0
       strip-ansi: 7.1.0
-      tsconfck: 3.0.0(typescript@5.2.2)
+      tsconfck: 3.0.0(typescript@5.3.3)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.2(@types/node@20.11.20)(sass@1.70.0)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.71.1)
       vitefu: 0.2.5(vite@4.5.2)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -3836,8 +3836,8 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass@1.70.0:
-    resolution: {integrity: sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==}
+  /sass@1.71.1:
+    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -4152,7 +4152,7 @@ packages:
   /trough@2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
 
-  /tsconfck@3.0.0(typescript@5.2.2):
+  /tsconfck@3.0.0(typescript@5.3.3):
     resolution: {integrity: sha512-w3wnsIrJNi7avf4Zb0VjOoodoO0woEqGgZGQm+LHH9przdUI+XDKsWAXwxHA1DaRTjeuZNcregSzr7RaA8zG9A==}
     engines: {node: ^18 || >=20}
     hasBin: true
@@ -4162,7 +4162,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 5.2.2
+      typescript: 5.3.3
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
@@ -4337,12 +4337,12 @@ packages:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
 
   /typescript@5.3.3:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -4498,7 +4498,7 @@ packages:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  /vite@4.5.2(@types/node@20.11.20)(sass@1.70.0):
+  /vite@4.5.2(@types/node@20.11.20)(sass@1.71.1):
     resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4530,7 +4530,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
-      sass: 1.70.0
+      sass: 1.71.1
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -4542,7 +4542,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.2(@types/node@20.11.20)(sass@1.70.0)
+      vite: 4.5.2(@types/node@20.11.20)(sass@1.71.1)
 
   /vscode-languageserver-textdocument@1.0.11:
     resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
@@ -4556,7 +4556,7 @@ packages:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: true
 
-  /vue@3.3.9(typescript@5.2.2):
+  /vue@3.3.9(typescript@5.3.3):
     resolution: {integrity: sha512-sy5sLCTR8m6tvUk1/ijri3Yqzgpdsmxgj6n6yl7GXXCXqVbmW2RCXe9atE4cEI6Iv7L89v5f35fZRRr5dChP9w==}
     peerDependencies:
       typescript: '*'
@@ -4569,7 +4569,7 @@ packages:
       '@vue/runtime-dom': 3.3.9
       '@vue/server-renderer': 3.3.9(vue@3.3.9)
       '@vue/shared': 3.3.9
-      typescript: 5.2.2
+      typescript: 5.3.3
     dev: false
 
   /web-namespaces@2.0.1:
