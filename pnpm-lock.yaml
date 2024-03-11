@@ -16,7 +16,7 @@ dependencies:
     version: 6.5.1
   astro:
     specifier: ^3.6.5
-    version: 3.6.5(@types/node@20.11.24)(sass@1.71.1)(typescript@5.3.3)
+    version: 3.6.5(@types/node@20.11.25)(sass@1.71.1)(typescript@5.3.3)
   bootstrap:
     specifier: ^5.3.3
     version: 5.3.3(@popperjs/core@2.11.8)
@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^5.2.10
     version: 5.2.10
   '@types/node':
-    specifier: ^20.11.24
-    version: 20.11.24
+    specifier: ^20.11.25
+    version: 20.11.25
   '@types/pako':
     specifier: ^2.0.3
     version: 2.0.3
@@ -74,7 +74,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.6.5(@types/node@20.11.24)(sass@1.71.1)(typescript@5.3.3)
+      astro: 3.6.5(@types/node@20.11.25)(sass@1.71.1)(typescript@5.3.3)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -133,7 +133,7 @@ packages:
       '@vitejs/plugin-vue-jsx': 3.0.2(vite@4.5.2)(vue@3.3.9)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
       '@vue/compiler-sfc': 3.3.8
-      astro: 3.6.5(@types/node@20.11.24)(sass@1.71.1)(typescript@5.3.3)
+      astro: 3.6.5(@types/node@20.11.25)(sass@1.71.1)(typescript@5.3.3)
       vue: 3.3.9(typescript@5.3.3)
     transitivePeerDependencies:
       - '@babel/core'
@@ -1131,8 +1131,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.11.24:
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1168,7 +1168,7 @@ packages:
       '@babel/core': 7.23.3
       '@babel/plugin-transform-typescript': 7.23.3(@babel/core@7.23.3)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.23.3)
-      vite: 4.5.2(@types/node@20.11.24)(sass@1.71.1)
+      vite: 4.5.2(@types/node@20.11.25)(sass@1.71.1)
       vue: 3.3.9(typescript@5.3.3)
     transitivePeerDependencies:
       - supports-color
@@ -1181,7 +1181,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.2(@types/node@20.11.24)(sass@1.71.1)
+      vite: 4.5.2(@types/node@20.11.25)(sass@1.71.1)
       vue: 3.3.9(typescript@5.3.3)
     dev: false
 
@@ -1453,11 +1453,11 @@ packages:
       astro: ^3.0.0
       purgecss: ^5.0.0
     dependencies:
-      astro: 3.6.5(@types/node@20.11.24)(sass@1.71.1)(typescript@5.3.3)
+      astro: 3.6.5(@types/node@20.11.25)(sass@1.71.1)(typescript@5.3.3)
       purgecss: 5.0.0
     dev: true
 
-  /astro@3.6.5(@types/node@20.11.24)(sass@1.71.1)(typescript@5.3.3):
+  /astro@3.6.5(@types/node@20.11.25)(sass@1.71.1)(typescript@5.3.3):
     resolution: {integrity: sha512-fyVubQfb6+Bc2/XigXNeJ06HHwNFB9EnAQohJcrja6RB1PhIcZRusyIamywHWjoJ4a1T0HxMkzBLNW96DBqpNw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1515,7 +1515,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.3.3)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.2(@types/node@20.11.24)(sass@1.71.1)
+      vite: 4.5.2(@types/node@20.11.25)(sass@1.71.1)
       vitefu: 0.2.5(vite@4.5.2)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -4485,7 +4485,7 @@ packages:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  /vite@4.5.2(@types/node@20.11.24)(sass@1.71.1):
+  /vite@4.5.2(@types/node@20.11.25)(sass@1.71.1):
     resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4513,7 +4513,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.11.25
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
@@ -4529,7 +4529,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.2(@types/node@20.11.24)(sass@1.71.1)
+      vite: 4.5.2(@types/node@20.11.25)(sass@1.71.1)
 
   /vscode-languageserver-textdocument@1.0.11:
     resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
