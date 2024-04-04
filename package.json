@@ -21,7 +21,7 @@
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.6.1",
     "@types/bootstrap": "^5.2.10",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.4",
     "@types/pako": "^2.0.3",
     "astro-compress": "^2.2.3",
     "astro-critters": "^2.1.6",
