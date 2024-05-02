@@ -1,8 +1,6 @@
 import { defineConfig } from "astro/config";
 import purgecss from "astro-purgecss";
 import compress from "astro-compress";
-import vue from "@astrojs/vue";
-
 import critters from "astro-critters";
 
 const crittersConfig = critters({
@@ -15,6 +13,6 @@ const crittersConfig = critters({
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), purgecss(), compress(), crittersConfig],
+  integrations: [purgecss(), compress(), crittersConfig],
   site: "https://nhubaotruong.github.io"
 });
