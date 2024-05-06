@@ -24,7 +24,7 @@
     "@types/pako": "^2.0.3",
     "astro-compress": "^2.2.3",
     "astro-critters": "^2.1.6",
-    "astro-purgecss": "^3.2.1",
+    "astro-purgecss": "^4.1.1",
     "sass": "^1.75.0"
   }
 }
