@@ -1,17 +1,4 @@
 ---
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "@fontsource/inter/index.css";
-import "@fontsource/inter/100.css";
-import "@fontsource/inter/200.css";
-import "@fontsource/inter/300.css";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
-import "@fontsource/inter/800.css";
-import "@fontsource/inter/900.css";
-
 import "../styles/index.css";
 ---
 
@@ -22,13 +9,38 @@ import "../styles/index.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <title>Nhu Bao Truong</title>
   </head>
-  <body>
+  <body class="bg-black text-white min-h-screen">
+    <!-- Background gradient -->
+    <div class="fixed inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pointer-events-none"></div>
+    <!-- Background orbs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute left-1/2 top-1/2 -translate-x-[60%] -translate-y-1/2 w-[30rem] h-[30rem] bg-[#646cff]/20 rounded-full blur-3xl mix-blend-screen animate-float-slow"></div>
+      <div class="absolute left-1/2 top-1/2 -translate-x-[40%] -translate-y-1/2 w-[30rem] h-[30rem] bg-[#ff6b6b]/20 rounded-full blur-3xl mix-blend-screen animate-float-slower"></div>
+    </div>
     <slot />
   </body>
 </html>
+
+<style>
+  @keyframes float-slow {
+    0%, 100% { transform: translate(-60%, -50%) translateY(-2rem); }
+    50% { transform: translate(-60%, -50%) translateY(2rem); }
+  }
+  @keyframes float-slower {
+    0%, 100% { transform: translate(-40%, -50%) translateY(2rem); }
+    50% { transform: translate(-40%, -50%) translateY(-2rem); }
+  }
+  .animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+  .animate-float-slower {
+    animation: float-slower 8s ease-in-out infinite;
+  }
+</style>
 
 <script>
   import pako from "pako";

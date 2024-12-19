@@ -1,26 +1,72 @@
-<h1 class="justify-content-center align-items-center d-flex">
-    <img
+---
+const titles = [
+  { text: "Backend Engineer", highlight: "who can write decent CSS" },
+  { text: "Linux Enthusiast", highlight: "btw I use Universal Blue" },
+  { text: "Gamer", highlight: "and occasional Rick Roller" }
+];
+---
+
+<div class="relative w-full max-w-4xl mx-auto px-4">
+  <div class="relative flex flex-col items-center py-6 sm:py-12">
+    <!-- Avatar section -->
+    <div class="group relative">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-[#646cff] to-[#ff6b6b] rounded-full opacity-75 blur-sm group-hover:opacity-100 transition duration-500"></div>
+      <img
         src="/avatar.webp"
         alt="avatar"
-        class="img-fluid rounded-circle"
-        style="height: 7.5em"
-    />
-</h1>
-<h1 class="text-center py-4 fw-semibold">Trương Như Bảo</h1>
-<h3 class="text-center">Backend Engineer (you can tell from the css)</h3>
-<h3 class="text-center">GNU/Linux user and gamer (Arch BTW)</h3>
-<h3 class="text-center">sometimes a Rick Roller</h3>
+        class="relative h-56 sm:h-72 md:h-80 rounded-full border-2 border-neutral-800/50 transition duration-500 group-hover:scale-[1.02]"
+      />
+    </div>
+
+    <!-- Name section -->
+    <div class="mt-8 text-center">
+      <h1 class="inline-block text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#646cff] to-[#ff6b6b] text-transparent bg-clip-text pb-1 opacity-0 animate-[fadeIn_0.5s_ease_forwards_0.2s]">
+        Trương Như Bảo
+      </h1>
+      <p class="mt-4 text-sm sm:text-base md:text-lg text-neutral-400 opacity-0 animate-[fadeIn_0.5s_ease_forwards_0.4s]">
+        Building cool stuff with code
+      </p>
+    </div>
+
+    <!-- Titles section -->
+    <div class="mt-12 space-y-4 text-center w-full">
+      {titles.map((title, index) => (
+        <div 
+          class="group cursor-pointer opacity-0 translate-y-4"
+          style={`animation: fadeSlideUp 0.5s ease forwards ${0.6 + index * 0.1}s`}
+        >
+          <h3 class="text-lg sm:text-xl md:text-2xl text-neutral-300 group-hover:text-white transition duration-300">
+            {title.text} <span class="text-neutral-500 group-hover:text-[#646cff] block sm:inline">/ {title.highlight}</span>
+          </h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
 
 <script>
-    const h3s = document.querySelectorAll("h3");
-    h3s.forEach((h3) => {
-        h3.addEventListener("click", () => {
-            window.open(
-                atob(
-                    "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==",
-                ),
-                "_blank",
-            );
-        });
+  const titles = document.querySelectorAll('.group');
+  titles.forEach((title) => {
+    title.addEventListener('click', () => {
+      window.open(
+        atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ=="),
+        '_blank'
+      );
     });
+  });
 </script>
