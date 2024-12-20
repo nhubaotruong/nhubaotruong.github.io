@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GithubIcon from "../assets/github.svg";
-import LinkedinIcon from "../assets/linkedin.svg";
-import EmailIcon from "../assets/email.svg";
+import GithubIcon from "../assets/github.svg?raw";
+import LinkedinIcon from "../assets/linkedin.svg?raw";
+import EmailIcon from "../assets/email.svg?raw";
 import SkillBox from "../components/SkillBox.astro";
 import Contact from "../components/Contact.astro";
 ---
@@ -25,7 +25,7 @@ import Contact from "../components/Contact.astro";
 				<div class="flex justify-center gap-4 md:gap-6">
           <Contact href="https://github.com/nhubaotruong" icon={GithubIcon} alt="GitHub" />
           <Contact href="https://linkedin.com/in/nhubaotruong" icon={LinkedinIcon} alt="LinkedIn" />
-          <Contact href="mailto:nhubaotruong@proton.me" icon={EmailIcon} alt="Email" />
+          <Contact href="mailto:nhubaotruong@proton.me" icon={EmailIcon} alt="Email" isEmail />
 				</div>
 			</section>
 

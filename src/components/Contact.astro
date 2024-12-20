@@ -1,13 +1,19 @@
 ---
 interface Props {
 	href: string;
-	icon: ImageMetadata;
+	icon: string;
 	alt: string;
+	isEmail?: boolean;
 }
 
-const { href, icon, alt } = Astro.props;
+const { href, icon, alt, isEmail = false } = Astro.props;
 ---
 
-<a href={href} target="_blank" rel="noopener noreferrer" class="hover:-translate-y-1 transition-transform">
-	<img src={icon.src} alt={alt} class="w-8 h-8 text-white" />
-</a>
+<a 
+  href={href} 
+  class="text-white hover:text-indigo-300 transition-colors" 
+  aria-label={alt}
+  {...!isEmail && { target: "_blank", rel: "noopener noreferrer" }}
+>
+  <Fragment set:html={icon} />
+</a> 
