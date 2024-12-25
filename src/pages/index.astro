@@ -15,6 +15,9 @@ import Contact from "../components/Contact.astro";
 					<img 
 						src="/avatar.webp" 
 						alt="Nhu Bao Truong" 
+						loading="eager"
+						decoding="async"
+						fetchpriority="high"
 						class="w-48 h-48 rounded-full mx-auto mb-8 object-cover border-4 border-indigo-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20"
 					/>
 					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent leading-tight py-2">
@@ -31,7 +34,7 @@ import Contact from "../components/Contact.astro";
 
 			<section>
 				<h2 class="text-4xl text-indigo-300 mb-6 font-bold">About Me</h2>
-				<p class="text-lg text-white/90 leading-relaxed">
+				<p class="text-lg text-white/90 leading-relaxed text-balance">
 					I'm a Software Engineer with a strong focus on Backend Development and DevOps practices. 
 					My expertise lies in building robust, scalable systems and automating deployment processes.
 				</p>
