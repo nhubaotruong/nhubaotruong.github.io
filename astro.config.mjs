@@ -12,17 +12,19 @@ const crittersConfig = critters({
 });
 
 const getSiteUrl = () => {
+	// Cloudflare Pages sets CF_PAGES=1 during build
 	if (process.env.CF_PAGES) {
+		// CF_PAGES_URL is available in production, CLOUDFLARE_DEV_HOSTNAME in preview
 		return (
 			process.env.CF_PAGES_URL ||
 			`https://${process.env.CLOUDFLARE_DEV_HOSTNAME}`
 		);
 	}
-	return "https://nhubaotruong.github.io";
+	return "https://nhubaotruong.github.io"; // Default to GitHub Pages
 };
 
+// https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind(), compress(), crittersConfig],
 	site: getSiteUrl(),
-	output: "static",
 });
