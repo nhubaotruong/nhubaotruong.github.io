@@ -11,16 +11,80 @@
 		Bored? Click me!
 </button>
 
-    <script>
-        const funButton = document.getElementById('fun-button');
-        if (funButton) {
-          funButton.addEventListener('click', () => {
-            const chars = [100, 81, 119, 52, 119, 57, 87, 103, 88, 99, 81];
-            window.open(
-              `https://www.youtube.com/watch?v=${chars.map(c => String.fromCharCode(c)).join('')}`,
-              '_blank',
-              'noopener,noreferrer'
-            );
-          });
-        }
-      </script>
+<div id="fun-overlay" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
+	<div class="relative w-full max-w-4xl aspect-video">
+		<div id="fun-video"></div>
+		<button 
+			id="close-fun"
+			class="absolute -top-12 right-0 text-white/80 hover:text-white text-xl font-bold p-2"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+			</svg>
+			<span class="sr-only">Close</span>
+		</button>
+	</div>
+</div>
+
+<script>
+	declare global {
+		interface Window {
+			YT: {
+				Player: {
+					prototype: any;
+					new(elementId: string, config: any): {
+						playVideo(): void;
+						stopVideo(): void;
+					};
+				};
+			};
+			onYouTubeIframeAPIReady: () => void;
+		}
+	}
+
+	let player: { playVideo(): void; stopVideo(): void; } | null = null;
+
+	// Load YouTube API
+	const tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	const firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+
+	// Create YouTube player when API is ready
+	window.onYouTubeIframeAPIReady = () => {
+		player = new window.YT.Player('fun-video', {
+			height: '100%',
+			width: '100%',
+			videoId: String.fromCharCode(...[100, 81, 119, 52, 119, 57, 87, 103, 88, 99, 81]),
+			playerVars: {
+				controls: 0,
+				rel: 0,
+				playsinline: 1
+			},
+			events: {
+				onReady: onPlayerReady
+			}
+		});
+	};
+
+	// When player is ready, set up event listeners
+	const onPlayerReady = () => {
+		const funButton = document.getElementById('fun-button');
+		const funOverlay = document.getElementById('fun-overlay');
+		const closeFun = document.getElementById('close-fun');
+
+		if (funButton && funOverlay && closeFun && player) {
+			funButton.addEventListener('click', () => {
+				funOverlay.classList.remove('hidden');
+				funOverlay.classList.add('flex');
+				player?.playVideo();
+			});
+
+			closeFun.addEventListener('click', () => {
+				funOverlay.classList.add('hidden');
+				funOverlay.classList.remove('flex');
+				player?.stopVideo();
+			});
+		}
+	};
+</script>
