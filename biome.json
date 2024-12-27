@@ -1,0 +1,36 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+    "organizeImports": { "enabled": true },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "correctness": {
+                "noUnusedImports": "error"
+            },
+            "style": {
+                "noNamespace": "error"
+            }
+        },
+        "ignore": ["node_modules", "dist", ".vscode", ".node-version"],
+        "include": ["src/**/*.ts"]
+    },
+    "overrides": [
+        {
+            "include": ["*.astro"],
+            "linter": {
+                "rules": {
+                    "style": {
+                        "useConst": "off",
+                        "useImportType": "off"
+                    }
+                }
+            }
+        }
+    ],
+    "formatter": {
+        "formatWithErrors": true,
+        "indentStyle": "space",
+        "indentWidth": 4
+    }
+}
