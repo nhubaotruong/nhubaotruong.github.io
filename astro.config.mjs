@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 import critters from "astro-critters";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 const crittersConfig = critters({
     pruneSource: true,
@@ -25,6 +25,12 @@ const getSiteUrl = () => {
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [tailwind(), compress(), crittersConfig],
+    vite: {
+        plugins: [tailwindcss()],
+        ssr: {
+            noExternal: true,
+        },
+    },
+    integrations: [compress(), crittersConfig],
     site: getSiteUrl(),
 });
