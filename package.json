@@ -15,7 +15,7 @@
     "@tailwindcss/postcss": "^4.0.17",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.0.17",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.13.17",
     "astro-compress": "^2.3.7",
     "astro-critters": "^2.2.1",
     "autoprefixer": "^10.4.21",
